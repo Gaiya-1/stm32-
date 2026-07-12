@@ -41,20 +41,3 @@ plaintext
  
  
  
-GitHub 仓库 Topics（标签）推荐
- 
-你在仓库设置 → Topics 里依次粘贴添加这些标签，利于开源曝光和求职检索：
- stm32   embedded-systems   intelligent-car   bare-metal   keil-mdk   tb6612   line-tracking-car   obstacle-avoidance   iot-project   c-language 
- 
-标签释义
- 
-1.  stm32 ：核心芯片标识
-2.  embedded-systems ：嵌入式系统（求职最加分标签）
-3.  intelligent-car ：智能小车项目主题
-4.  bare-metal ：裸机开发，体现底层能力
-5.  keil-mdk ：开发环境
-6.  tb6612 ：电机驱动硬件
-7.  line-tracking-car ：循迹小车
-8.  obstacle-avoidance ：避障功能
-9.  iot-project ：物联网工程项目（贴合你的专业）
-10.  c-language ：开发语言
