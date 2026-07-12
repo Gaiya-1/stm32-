@@ -1,2 +1,60 @@
 # stm32智能小车
-STM32F103 based intelligent car, including line tracking, automatic obstacle avoidance, Bluetooth control and OLED display functions. 基于STM32F103的智能小车，实现循迹、自动避障、蓝牙遥控与OLED显示功能。
+markdown
+  
+# STM32F103 多功能智能小车项目
+## 项目简介
+本项目基于 **STM32F103C8T6** 主控芯片开发裸机嵌入式智能小车，采用分层模块化编程架构，集成自主黑线循迹、超声波智能避障、HC-05蓝牙手机遥控、0.96寸OLED状态显示、舵机角度扫描测距等功能，全部驱动代码独立封装，可直接用于嵌入式学习与求职项目展示。
+
+## 硬件组成清单
+- 主控芯片：STM32F103C8T6
+- 电机驱动：TB6612FNG 直流电机驱动模块
+- 循迹传感器：TCRT5000 红外反射式循迹模块
+- 测距模块：HC-SR04 超声波测距模块
+- 转向执行：SG90 9g PWM舵机
+- 无线通信：HC-05 蓝牙串口模块
+- 显示模块：0.96寸 I2C 协议OLED显示屏
+- 供电：锂电池稳压供电
+
+## 工程目录结构说明
+ 
+ 
+├── Hardware        # 外设驱动层，存放电机、循迹、超声波、舵机、蓝牙、OLED等所有硬件驱动代码
+├── Library         # STM32F10x 官方标准外设库底层固件文件
+├── Start           # 芯片启动汇编文件、中断向量表，单片机上电最先执行的初始化代码
+├── System          # 系统基础配置，包含RCC时钟初始化、SysTick延时函数、底层工具函数
+├── User            # 应用业务层，main.c主函数与小车整体运行逻辑、任务调度代码
+├── project.uvprojx # Keil MDK 工程主文件，打开整个项目的核心文件
+├── project.uvoptx  # Keil工程配置文件，存储编译、调试、下载相关参数设置
+ 
+plaintext
+  
+
+## 开发环境
+- 编译IDE：Keil MDK-ARM V5
+- 固件库：STM32F10x_StdPeriph_Lib_V3.5.0 标准外设库
+- 调试下载：SWD模式下载调试
+- 编程语言：C语言（裸机开发，无操作系统）
+
+## 仓库说明
+项目已通过 `.gitignore` 屏蔽编译生成的缓存文件夹（`Objects`/`Listings`/`DebugConfig`）与用户本地布局文件，仓库仅保留源码与工程核心文件。
+ 
+ 
+ 
+ 
+GitHub 仓库 Topics（标签）推荐
+ 
+你在仓库设置 → Topics 里依次粘贴添加这些标签，利于开源曝光和求职检索：
+ stm32   embedded-systems   intelligent-car   bare-metal   keil-mdk   tb6612   line-tracking-car   obstacle-avoidance   iot-project   c-language 
+ 
+标签释义
+ 
+1.  stm32 ：核心芯片标识
+2.  embedded-systems ：嵌入式系统（求职最加分标签）
+3.  intelligent-car ：智能小车项目主题
+4.  bare-metal ：裸机开发，体现底层能力
+5.  keil-mdk ：开发环境
+6.  tb6612 ：电机驱动硬件
+7.  line-tracking-car ：循迹小车
+8.  obstacle-avoidance ：避障功能
+9.  iot-project ：物联网工程项目（贴合你的专业）
+10.  c-language ：开发语言
