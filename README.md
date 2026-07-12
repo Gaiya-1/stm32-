@@ -18,13 +18,13 @@ markdown
 ## 工程目录结构说明
  
  
-Hardware        # 外设驱动层，存放电机、循迹、超声波、舵机、蓝牙、OLED等所有硬件驱动代码
-Library         # STM32F10x 官方标准外设库底层固件文件
-Start           # 芯片启动汇编文件、中断向量表，单片机上电最先执行的初始化代码
-System          # 系统基础配置，包含RCC时钟初始化、SysTick延时函数、底层工具函数
-User            # 应用业务层，main.c主函数与小车整体运行逻辑、任务调度代码
-project.uvprojx # Keil MDK 工程主文件，打开整个项目的核心文件
-project.uvoptx  # Keil工程配置文件，存储编译、调试、下载相关参数设置
+Hardware外设驱动层，存放电机、循迹、超声波、舵机、蓝牙、OLED等所有硬件驱动代码
+Library STM32F10x 官方标准外设库底层固件文件
+Start芯片启动汇编文件、中断向量表，单片机上电最先执行的初始化代码
+System系统基础配置，包含RCC时钟初始化、SysTick延时函数、底层工具函数
+User应用业务层，main.c主函数与小车整体运行逻辑、任务调度代码
+project.uvprojx Keil MDK工程主文件，打开整个项目的核心文件
+project.uvoptx Keil工程配置文件，存储编译、调试、下载相关参数设置
  
 plaintext
   
